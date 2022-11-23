@@ -1,0 +1,35 @@
+@charset "UTF-8";
+body{
+  background-color: rgb(194, 84, 84);
+
+}
+
+h1{
+  color: green;
+  font: normal  arial, verdana, serif;
+  
+}
+#principal{
+  color: blue;
+  text-align: center;
+}
+h2{
+  color: cornflowerblue;
+  
+}
+.basico{
+  color: violet;
+}
+.intermediario{
+  color: purple;
+}
+.avancado{
+  color: lightsalmon;
+}
+.principal{
+  color: gold;
+}
+p{
+  text-align: justify;
+  text-indent: 20px;
+}
