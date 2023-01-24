@@ -7,62 +7,94 @@
     <title>Colocando escopos e extensoes de tabelas</title>
 </head>
 <style>
-    tbody{
-        font-family: Arial, Helvetica, sans-serif;
-    }
-  table{
-    border-collapse: collapse ;
-    width: 300px;
-  }
-  thead{
+  body{
     font-family: Arial, Helvetica, sans-serif;
+
+   }
+  table{
+    border-collapse: collapse;
+  
   }
-  td{
-    border: 1px solid black;
-    padding: 10px;
+  th, td{
+border: 1px solid black;
+padding: 8px;
+text-align: center;
   }
+  .num{
+    text-align: left;
+    background-color: gray;
+  }
+.dado{
+  background-color: gray;
+}
+th{
+  background-color:gray;
+}
+.destaque{
+background-color: white;
+}
 </style>
 <body>
-    <h1>DESAFIO 14</h1>
-   
+  
     <table>
-<thead>
    <tr>
-    <th>Áreas</th>
-    <th>Disciplinas</th>
-    <th>Notas</th>
-    
+     <th scope="col" rowspan="2">Áreas</th>
+    <th scope="col" rowspan="2">Disciplinas</th>
+    <th scope="colgroup" colspan="2">Notas</th>
+    <th scope="col" rowspan="2">Média</th>
    </tr>
-</thead>
-
-<tbody>
-  <tr>
-    <th colspan="4">Exatas</th>
-    <td>Matematica</td>
-    <td>0.0</td>
-  </tr>
-  <tr>
-    <td>Fisica</td>
-
-  </tr>
-  <tr>
-    <td>Quimica</td>
-  </tr>
-  <tr>
-    <td>Biologia</td>
-  </tr>
-  <tr>
-    <th>Média de Exatas</th>
-  </tr>
-  <tr>
-    <th>Humanas</th>
-  </tr>
    <tr>
-    <th>Média de Humanas</th>
+    <th scope="col">Notas 1</th>
+    <th scope="col">Notas 2</th>
    </tr>
+<tr>
+<th rowspan="4" scope="rowgroup" class="destaque">Exatas</th>
+  <td>Matematica</td>
+  <td>0.0</td>
+  <td>0.0</td>
+  <td>0.0</td>
+ </tr>
+ <tr>
+<td>Fisica</td>
+<td>0.0</td>
+<td>0.0</td>
+<td>0.0</td>
+ </tr>
+ <tr>
+  <td>Quimica</td>
+  <td>0.0</td>
+  <td>0.0</td>
+  <td>0.0</td>
+ </tr>
+ <tr>
+  <td>Biologia</td>
+  <td>0.0</td>
+  <td>0.0</td>
+  <td>0.0</td>
+ </tr>
+ <tr>
+  <th colspan="4" scope="row" class="num">Média de Exatas</th>
+  <td class="dado">0.0</td>
+ </tr>
+ <tr>
+  <th rowspan="2" scope="rowgroup" class="destaque">Humanas</th>
+  <td>Historia</td>
+  <td>0.0</td>
+  <td>0.0</td>
+  <td>0.0</td>
+ </tr>
+ <tr>
+  <td>Geografia</td>
+  <td>0.0</td>
+  <td>0.0</td>
+  <td>0.0</td>
+ </tr>
+ <tr>
+  <th colspan="4" scope="row" class="num">Média de Humanas</th>
+  <td class="dado">0.0</td>
+ </tr>
 
-</tbody>
-<tfoot></tfoot>
+
 
     </table>
 </body>
