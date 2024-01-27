@@ -16,7 +16,7 @@
         <!-- esse primeiro exemplo, é uma demonstração.
         existem muitas maneiras de criar um formulário
     mas nem sempre funcionar significa que é bom, ou que seja a melhor opção. -->
-    <form action="" autocomplete="off">
+    <form action="" autocomplete="off" method="post">
         <p><label for="inome">Nome:</label> 
             <input type="text" name="nome" id="inome"></p>
         <p><label for="isobrenome">Sobrenome: </label>
@@ -34,6 +34,13 @@ TEM TAMBEM COMO DESATIVAR A SUGESTÃO DE DADOS NA CAIXA USANDO AUTOCOMPLETE AO L
 <!-- Para criar uma ligação entre o "sobrenome" por exemplo, e a caixa
 eu uso ETIQUETAS (LABEL) envelopo o Nome ali acima por ex, com LABEL
 fazendo isso, o LABEL vai me dar um FOR, dentro de for eu preciso colocar o meu ID que está dentro do input text que eu quero identificar, no caso de nome, o meu ID É inome.
-Eu preciso sempre identificar meu label ligando ao input, pra que a linguagem e os mecanismos de buscas possam identificar qual caixa se relaciona a qual label.-->
+Eu preciso sempre identificar meu label ligando ao input, pra que a linguagem e os mecanismos de buscas possam identificar qual caixa se relaciona a qual label
+Lá no site quando eu clico em nome, ele acende a caixa que eu tenho que preencher.-->
+
+<!-- Lembrando que preenchendo um dado da forma que está ali acima, simplificado, eu preencho o formulario, e lá NO CAMPO DA URL DO NAVEGADOR aparece oque o usuario preencheu, mas da pra mandar sem ser pela URL.
+No html5 tem duas forma simples de fazer esse envio de forma escondida
+(pra proteger precisa-se criptografar.) 
+METODO 1 = METODO GET = APARECE NA URL ''method=post' (dentro da tag form)
+METODO 2 = METODO POST method=post (dentro da tag form) = SOME DA URL MAS NO INSPECIONAR APARECE NO DEV TOLLS (headers) -->
 </body>
 </html>
