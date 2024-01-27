@@ -7,14 +7,14 @@
 </head>
 <body>
     <h1>Teste de formulário</h1>
-    <form action="cadastro.php" autocomplete="off" method="post">
+    <form action="cadastro.php" autocomplete="on" method="post">
         <p>
             <label for="iusu">Usuário:</label>
-            <input type="text" name="usu" id="iusu" required minlength="5" maxlength="15" size="10" placeholder="Nome de Usuário">
+            <input type="text" name="usu" id="iusu" required minlength="5" maxlength="15" size="10" placeholder="Nome de Usuário" autocomplete="username">
         </p>
         <p>
             <label for="isen">Senha:</label>
-            <input type="password" name="sen" id="isen" required minlength="5" maxlength="8">
+            <input type="password" name="sen" id="isen" required minlength="5" maxlength="8" placeholder="Minimo 8 caracteres" autocomplete="current-password">
         </p>
         <p>
             <input type="submit" value="Enviar">
@@ -32,5 +32,8 @@ tb consigo criar o meu form já escolhendo o method, post ou get.
   -->
   <!-- Consigo mudar o tamanho da caixa dentro do proprio html, usando SIZE e colocando um numero de quantidade de letras, ele aceita quantas eu defini no maxlength, porem ele so exibe a quantidade que eu especifiquei pra ele.-->
   <!-- Posso usar placeholder para especificar dentro da caixa o que eu quero que o usuario preencha ali, não tá preenchido apenas sugerindo. -->
+  <!-- Tambem posso usar o AUTOCOMPLETE, (visto anteriormente que serve para desativar a sugestão de preenchimento) para identificar a caixa pro navegador saber o que ele sugere pra determinada caixa
+exemplo:
+coloco ele dentro do input de preenchimento, e ele me sugere, como "current-password" isso vai sugerir pro navegador do usuário uma senha que ele já tenha salva ou usuario, pra preencher automatico, como ex o nome dele completo, ou so primeiro nome, ou só sobrenome ou email e muito mais (tem que estar autocomplete do form em ON)-->
 </body>
 </html>
