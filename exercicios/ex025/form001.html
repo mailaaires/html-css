@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORMULÁRIOS</title>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>
+        Meu primeiro formulário</h1>
+        <!-- esse primeiro exemplo, é uma demonstração.
+        existem muitas maneiras de criar um formulário
+    mas nem sempre funcionar significa que é bom, ou que seja a melhor opção. -->
+    <form action="" autocomplete="off">
+        <p><label for="inome">Nome:</label> 
+            <input type="text" name="nome" id="inome"></p>
+        <p><label for="isobrenome">Sobrenome: </label>
+            <input type="text" name="sobrenome" id="isobrenome"></p>
+        <p><input type="submit" value="Enviar"></p>
+    </form>
+    <!-- aqui eu usei form, nome e sobrenome divido por paragrafo
+    usei a tag input text, (sendo que tem várias opções) 
+usei o atalho TAB pra preencher entre um "" e outro "". 
+identifiquei o name, e o id.
+usei INPUT SUBMIT que é o meu botão, identificando como "Enviar" o botão.  -->
+<!-- LEMBRANDO QUE NESTE EXEMPLO SO DE NOME, SOBRENOME E BOTÃO, OS DADOS NÃO ESTÃO INDO PRA LUGAR NENHUM E NÃO EXISTE LIGAÇÃO ENTRE O INDICATIVO "NOME" E A CAIXA DE PREENCHIMENTO. 
+TEM TAMBEM COMO DESATIVAR A SUGESTÃO DE DADOS NA CAIXA USANDO AUTOCOMPLETE AO LADO DO "FORM".-->
+<!-- para mandar os dados para uma linguagem, no caso aqui em Php, vamos em "FORM" e criamos a tag "ACTION" > e coloco o nome do arquivo pra onde vai, entendendo que no caso acima ele não existe. Mas com a TAG action e com o comando do botão input SUBMIT, é assim que envio o dado de um form.  -->
+<!-- Para criar uma ligação entre o "sobrenome" por exemplo, e a caixa
+eu uso ETIQUETAS (LABEL) envelopo o Nome ali acima por ex, com LABEL
+fazendo isso, o LABEL vai me dar um FOR, dentro de for eu preciso colocar o meu ID que está dentro do input text que eu quero identificar, no caso de nome, o meu ID É inome.
+Eu preciso sempre identificar meu label ligando ao input, pra que a linguagem e os mecanismos de buscas possam identificar qual caixa se relaciona a qual label.-->
+</body>
+</html>
