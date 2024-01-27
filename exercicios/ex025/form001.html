@@ -40,7 +40,8 @@ Lá no site quando eu clico em nome, ele acende a caixa que eu tenho que preench
 <!-- Lembrando que preenchendo um dado da forma que está ali acima, simplificado, eu preencho o formulario, e lá NO CAMPO DA URL DO NAVEGADOR aparece oque o usuario preencheu, mas da pra mandar sem ser pela URL.
 No html5 tem duas forma simples de fazer esse envio de forma escondida
 (pra proteger precisa-se criptografar.) 
-METODO 1 = METODO GET = APARECE NA URL ''method=post' (dentro da tag form)
-METODO 2 = METODO POST method=post (dentro da tag form) = SOME DA URL MAS NO INSPECIONAR APARECE NO DEV TOLLS (headers) -->
+METODO 1 = METODO GET = APARECE NA URL ''method=post' (dentro da tag form) eu uso quando são dados não-sensiveis, podendo enviar aproximadamente apenas 3 mil letras/bytes.
+METODO 2 = METODO POST method=post (dentro da tag form) = SOME DA URL MAS NO INSPECIONAR APARECE NO DEV TOLLS (headers)  uso quando são dados mais sensiveis (até certo ponto), e posso usar com dados de mais de 3 mil letras/bytes.
+-->
 </body>
 </html>
