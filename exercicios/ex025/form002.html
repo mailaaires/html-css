@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario 2</title>
+</head>
+<body>
+    <h1>Teste de formulário</h1>
+    <form action="cadastro.php" autocomplete="off" method="post">
+        <p>
+            <label for="iusu">Usuário:</label>
+            <input type="text" name="usu" id="iusu" required minlength="5" maxlength="15">
+        </p>
+        <p>
+            <label for="isen">Senha:</label>
+            <input type="password" name="sen" id="isen" required minlength="5" maxlength="8">
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+<!-- 
+    Vemos aqui novos comandos de input, como reset pra limpar senha
+    password para caixa de senha.
+tb consigo criar o meu form já escolhendo o method, post ou get.
+ -->
+ <!-- 
+    Consigo fazer tambem com que seja obrogatio o usuario preencher as caixas, usando a tag REQUIRED dentro do INPUT da caixa.
+    Tambem posso requerer, especificaçoes p/ nome de usuario, como quantidade de letras usando: minlength para minimo, e maxlenght e definir dentro das "", a quantidade que eu quero.
+  -->
+</body>
+</html>
