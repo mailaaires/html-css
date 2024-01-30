@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+<body>
+    <h1>Elementos a mais de Formularios</h1>
+    <form action="cadastro.php" method="post">
+        <p>
+            <label for="iest">Estado</label>
+            <select name="Estado" id="iest">
+                <option value="" selected >Escolha uma opção</option>
+                <optgroup label="Região Sul">
+                    <option value="SP">São Paulo</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="MG">Minas Gerais</option>
+                </optgroup>
+
+
+                <optgroup label="Região Centro-Oeste">
+                    <option value="GO">Goiás</option>
+                    <option value="DF">Distrito Federal</option>
+                    <option value="TO">Tocantins</option>
+                </optgroup>
+
+            </select>
+
+
+        </p>
+        <p>
+            <label for="iprof">Profissão: </label>
+            <input type="text" name="prof" id="iprof" list="lstprof">
+
+            <datalist id="lstprof">
+                <option>Administrador</option>
+                <option>Contabilista</option>
+                <option>Desenvolvedor</option>
+                <option>Professor</option>
+            </datalist>
+   </p>
+   <p>
+    <label for="imsg">Mensagem: </label><br>
+            <textarea name="msg" id="imsg" cols="30" rows="10"></textarea>
+   </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+    <!-- Aqui nos vamos usar a tag select, dentro da dela se cria uma lista que você clica no botão e descorre as opçoes, para criar essas opções nos utilizamos a tag OPTION dentro de select, lembrando aqui que o select substitui a tag INPUT, tenho que fazer a ligação entre label e select tambem, so que o select me da outras opçoes de ferramentas q posso usar. -->
+    <!-- PREENCHO VALUE COM O DADO QUE VAI SER ENVIADO NA URL PRA DEFINIR A OPÇÃO ESCOLHIDA PELO USUARIO, PREFERENCIALMENTE UMA ABREVIAÇÃO DO DADO. -->
+    <!-- com a tag optgroup, consigo agrupar dentre as opçoes, para dividilas em classes especeficas, eu seleciono as divisoes, que eu quero ex : sul e centro-oeste, envelopo separadamente com optgroup, e coloco LABEL ao lado do OPTGROUP, esse label não é igual ao de cima, é apenas um LABEL ATRIBUTO. E NESSE LABEL EU COLOCO O TITULO DO GRUPO DE OPÇOES. e ai ele vai dividir la na lista, as minhas opçoes.
+    Se eu quiser ja uma opção ali preselecionada, eu vou ao lado do value em option, e coloco a tag SELECTED  -->
+    <!-- Posso tambem colocar um option acima do optgroup, com uma pre seleção editada ex: ESCOLHA A OPÇÃO. (e o volue vazio) e um SELECTED, para aparecer em primeiro.-->
+    <!-- Consigo tambem colocar uma ferramenta pra o usuario digitar a opção q ele deseja, que não está na lista usando: crio um LABEL USANDO O FOR COM O MESMO ID DO INPUT ABAIXO
+        o input text, coloco o meu id IGUAL AO FOR DO LABEL, coloco um LIST dentro do input (ao final) e defino um id  (um nome) pra ele
+    e crio um DATALIST ABAIXO DO MEU INPUT, EU DEFINO UM ID DENTRO DO DATALIST, COLOCO o mesmo id (nome) do LIST. coloco dentro do datalist as options, posso colocar o Value e ele vai aparecer pro usuario neste caso, ou posso criar e apagar o VALUE..-->
+
+    <!-- TEM TAMBEM O "textarea" , COM ELE CONSIGO CRIAR UM FORMULARIO PRA DEIXAR UMA CAIXA QUE O USUARIO PODE PREENCHER COM A UMA MENSAGEM.  
+    EX: 
+            <label for="imsg">Mensagem: </label><br>
+            <textarea name="msg" id="imsg" cols="30" rows="10"></textarea>
+
+            o id é igual ao do Label, o corls define a quantidade de colunas que vai aparecer na tela, e o rows quantas linhas vão aparecer na tela, depois de 30 letras ele quebra pra proxima linha. 
+            Quando usar TEXTAREA PRECISO DO MEU FORMULARIO METHOD POST, pra n ter problema de limitação. 
+        -->
+
+</body>
+</html>
