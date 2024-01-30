@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio Form006</title>
+</head>
+<body>
+   <form action="cadastro.php" method="post" autocomplete="on"> 
+    <p>
+        <label for="icor">Cor:</label>
+        <input type="color" name="cores" id="icor" value="#00ff00">
+    </p>
+    <p>
+        <label for="inivel">Nivel de Satisfação</label>
+        <input type="range" name="Nivel" id="inivel" min="0" max="10" value="0">
+    </p>
+    <p>
+        <label for="ifoto">Foto de Perfil</label>
+        <input type="file" name="Foto" id="ifoto">
+    </p>
+    <p>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar">
+   </p>
+   </form>
+
+   <!-- Vamos ver aqui, outros componentes
+de cor ede nivel e de foto.
+o componente cor, eu uso o label padrão, e uso INPUT COLOR
+por padrão ele já sugere o preto, mas eu posso mudar usando: VALUE e o codigo da cor q eu quero
+O COMPONENTE NIVEL, USO LABEL PADRÃO, e o Input RANGE 
+por padrão ele vai de 0 a 100 e inicia no meio (50), mas eu posso mudar esse valor, e mudar a posição q ele inicia
+usando: min e max (que funciona pra numeros) e ai eu defino, se vai de 0 a 100 ou de 5 a 4, como eu quiser,  e usando VALUE: #****** e a numeração q eu quero, pra definir a posição que ele inicia.-->
+<!-- no componente Input:FILE
+o usuario escolher  a foto (imagem) q ele quer enviar 
+quando eu utilizado esse tipo de controle, como o FILE, eu não posso usar o method GET, eu preciso usar o method POST, porque ai os arquivos vão ser enviados no cabeçalho da URL, SEMPRE QUE OS DADOS ULTRAPASSAREM 3 MIL BYTES, eu preciso usar o metodo POST.-->
+<!-- Finalizamos aqui os exemplos dentro da TAG input. -->
+</body>
+</html>
