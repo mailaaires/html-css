@@ -11,18 +11,33 @@
        <form action="cadastro.php" method="get" autocomplete="on">
         <p>
             <label for="inome">Nome</label>
-            <input type="text" name="inome" id="inome"  required maxlength="30" placeholder="Nome Completo" autocomplete="name">
+            <input type="text" name="nome" id="inome"  required maxlength="30" placeholder="Nome Completo" autocomplete="name">
         </p>
         <p>
             <label for="imedia">Média</label>
             <input type="number" name="imedia" id="imedia" required min="0" max="10" placeholder="0 a 10" step="0.1">
         </p>
         <p>
+           <label for="imes">Periodo Letivo</label>
+           <input type="month" name="mes" id="imes" value="2020-07">
+        </p>
+        <p>
+            <label for="idia">Dia da Prova</label>
+            <input type="date" name="dia" id="idia" value="2020-07-13">
+        </p>
+        <P>
+            <label for="ihora">Hora da Prova</label>
+            <input type="time" name="hora" id="ihora" value="19:30">
+        </P>
+        <p>
             <input type="submit" value="Enviar">
             <input type="reset" value="Limpar">
         </p>
         <!-- o min e max são atributos que eu uso no input number, que é numerico. o step eu usei para definir uma numeração -->
-       
+       <!-- tenho o INPUT MONTH, que é uma caixa de mês. -->
+       <!-- tem tambem o VALUE, que eu posso usar dentro do meu input, ele já sugere um valor preenchindo na caixa, diferente do placeholder que aparece não preenchido, o value sugere e já preenche. O value quando usado, anula o placeholder. -->
+       <!-- usei tambem o input date, que define O DIA. 
+    tem tb o input TIME, que define a hora-->
 
 
        </form>
