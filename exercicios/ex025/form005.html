@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex de Formularios</title>
+</head>
+<body>
+  <form action="cadastro.php" method="get" autocomplete="on">
+    <fieldset>
+        <legend>Sexo</legend>
+        
+        <input type="radio" name="sexo" id="imas" value="M">
+        <label for="imas">Masculino</label> <br>
+        
+        <input type="radio" name="sexo" id="ifem" checked value="F">
+        <label for="ifem">Feminimo</label> <br>
+
+    </fieldset>
+    <fieldset>
+        <legend>Esportes Favoritos</legend>
+        <input type="checkbox" name="esfut" id="iesfut"> 
+        <label for="iesfut">Futebol</label> <br>
+        <input type="checkbox" name="esbas" id="iesbas"> 
+        <label for="iesbas">Basquete</label> <br>
+        <input type="checkbox" name="esfutsal" id="iesfutsal"> 
+        <label for="iesfutsal">Futsal</label> <br>
+        <input type="checkbox" name="esnat" id="iesnat"> 
+        <label for="iesnat">Natação</label> <br>
+    </fieldset>
+
+    <p>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar">
+    </p>
+  </form>
+  <!-- Vamos criar um Input CHECKBOX, ele foi criado dentro de fieldset, sem P, e eu coloco o label, pra relacionar o objeto com a caixa que eu tô selecionando, ficou ao contrario pq eu criei o input primeiro, já que eu quero a caixa antes do conteudo.
+Essa relação é importante no input checkbox, juntamente com os ids relacionados, pra quando eu clicar no nome , ele marcar a opção correta, se eu relacionar trocado, ele vai selecionar trocado.  -->
+
+<!-- 
+    USEI TAMBEM O INPUT RADIO, PARA DEFINIR O SEXO SO POSSO ESCOLHER UM, POREM ELE SELECIONA, E NÃO DESLECIONA MAIS, OU SEJA, SE EU MARCAR MASCULINO E FEMINIMO, VAI FICAR MARCADO OS DOIS. 
+    Pra solucionar isso, eu coloco os dois inputs com o mesmo NOME *nos botoes de RADIO*, não é o mesmo ID, é o mesmo NOME.
+ -->
+ <!-- Se eu quiser que já apareça uma opção pre marcada, eu uso Checked dentro do input
+consigo colocar em mais de um no Checkbox, no radio só um -->
+<!-- EU USO VALUE no input, E DEFINO UMA IDENTIFICAÇÃO PRA DIFERENCIAR NA URL QUAL OPÇAO FOI SELECIONADA, JÁ QUE OS DOIS TEM O MESMO NOME -->
+</body>
+</html>

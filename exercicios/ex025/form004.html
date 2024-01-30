@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <h1>Formulario</h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+            <p>
+                <label for="iname">Nome</label>
+                <input type="text" name="Nome" id="iname" minlength="5" maxlength="10" placeholder="Nome" required>
+            </p>
+            <p>
+                <label for="iemail">Email</label>
+                <input type="email" name="Email" id="iemail" required autocomplete="email" placeholder="Email">
+            </p>
+            <p>
+                <label for="itele">Telefone</label>
+                <input type="tel" name="Telefone" id="itele" pattern="^\(\d{2}\)\d{4,5}-\d{4}$" required autocomplete="tel"   placeholder="(**) ****-****" >
+            </p>
+            <p>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </p>
+        </fieldset>
+    </form>
+
+    <!-- 
+        no input TEL, eu consigo definir um numero, porem ele envia qualquer numero que eu colocar ali, não verifica se é valido e afins, algumas coisas so iremos conseguir fazer aprendendo JavaScript, POREM nesse caso eu consigo usar EXPRESSÕES REGULARES (REGEx) que só vamos ver aqui superficialmente. Dentro de PATTERN, eu consigo colocar uma expressão regular, dentro do Html5, toda REGEx começa com "^" e termina com "$".
+        Estudar mais sobre. 
+
+        Ali acima eu defini:  pattern="^\(\d{2}\)\d{4,5}-\d{4}$" isso define que antes do -, eu quero de 4 a 5 digitos. e depois do - eu quero 4 digitos, e antes dos 4,5 primeiros numeros eu quero 2 numeros entre parenteses. 
+        Obriga o usuario a usar () e usar -. 
+        Isso é apenas pra definir basicamente, pq pra validar os dados só usando realmente uma linguagem.
+
+        eu posso tambem envelopar, todos os meus campos com FIELDSET, ele vai identificar/destacar minha area de caixas.
+        Envelopando os Pararagrafos. (que tambem podem ser DIVS).
+        Tambem consigo usar LEGEND, abaixo de fieldset, pra colocar uma legenda nessa caixa principal.
+        Da pra personalizar o Fieldset, com CSS3.
+        O fieldset é interessante pra agrupar campos por assuntos 
+        EX: Dados familiares
+        Dados de grupo
+        Dados de trabalho e afins.
+    
+     -->
+</body>
+</html>
