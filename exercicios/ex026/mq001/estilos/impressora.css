@@ -1,0 +1,21 @@
+@charset "UTF-8";
+/* ESTILO PARA IMPRESSÃO */
+
+* {
+margin: 0px;
+padding: 0px;
+}
+
+    html {
+        font-family: 'Courier New', Courier, monospace;
+        font-size: medium;
+    }
+
+    menu { 
+        display: none;
+    }
+
+    article::after {
+        content: 'Esse artigo foi escrito no dia 31.01.2024';
+
+    }

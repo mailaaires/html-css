@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query</title>
+    <link rel="stylesheet" href="estilos/tela.css" media="screen">
+    <link rel="stylesheet" href="estilos/impressora.css" media="print">
+</head>
+<body>
+    <h1>Media Query para uma simulação de site de noticias</h1>
+    <!-- O media queries. ou midia query, é utilizado para gerar uma versão de um site, para telas diferentes, para impressão, ele gera uma versão alternativa para cada determinada finalidade.
+Então utilizando midia query, eu consigo criar formas difentes para apresentar o meu conteúdo. -->
+
+    <!-- Media query para um site de noticias. -->
+    <!-- Começamos criando um link pra CSS externo, dentro de uma pasta, o exercicio aqui vai ser todo em pastas separadas. (ISSO É MUITO IMPORTANTE) e dentro do meu link, eu vou criar um MEDIA "SCREEN", que é para tela.
+    Em baixo eu vou criar outro link externo, pra css, dentro da mesma pasta estilo, so que com outro nome e com o MEDI "PRINT" -->
+    <!-- OU SEJA, UM CSS PRA CADA MEIO DIFERENTE, USANDO O MEDIA QUERY, PRA ELE DERECIONAR CADA ARQUIVO PRA DETERMINADA FINALIDADE. -->
+    <!-- Basicamente, toda configuração que eu fizer no meu css de tela, vai funcionar pra tela, e de impressora vai funcionar somente na hora da impressão.  -->
+    <!--  Inclusive se eu quiser adicionar alguma observação na impressão, eu pego a aba que eu quero 
+    exemplo: eu quero que apareca uma informação depois do meu article, eu uso article::after {contente '....'}, no meu css de impressão. -->
+    <header>
+        <h1>Noticias</h1>
+        <menu>
+            <ul>
+                <li>Esportes</li>
+                <li>Culinaria</li>
+                <li>Tempo</li>
+            </ul>
+        </menu>
+    </header>
+    <main>
+        <article>
+            <h2>Aprendendo Medias Queries</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias veritatis sunt deserunt pariatur fuga sit adipisci. Id autem itaque, natus voluptatibus tempora, optio labore laudantium illo voluptas dicta ab atque?
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos fuga magnam dolorum dolor rem quo labore deserunt aliquam ex quam ipsum, eum nostrum quibusdam debitis sequi magni adipisci nam aperiam!
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus praesentium aut sed ipsum consectetur labore. Neque possimus veritatis delectus mollitia non fuga necessitatibus, porro doloribus, eveniet animi aliquam architecto quam!
+            </p>
+        </article>
+    </main>
+    
+ 
+</body>
+</html>
