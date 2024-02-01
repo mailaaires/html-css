@@ -1,3 +1,25 @@
 @charset "UTF-8";
 
 /* Configurações Gerais */
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* confg para o body e html juntas: */
+html, body {
+width: 100vw;
+height: 100vh;
+background-color: #233eff;
+background-size: contain; 
+background-repeat: no-repeat ;
+
+} 
+/* (background - contain centralizou melhor a imagem do que o center neste caso) */
+
+h1 {
+    color: white;
+    text-shadow: 2px 2px 0px #1526a7;
+    padding: 10px;
+}

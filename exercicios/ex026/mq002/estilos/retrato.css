@@ -1,3 +1,11 @@
 @charset "UTF-8";
 
 /* aparelhos em pé (portrait) */
+
+body {
+    background-image: url(../imagens/cev-portrait.jpg);
+    background-position: center bottom;
+}
+
+/* aqui eu configurei uma imagem em pé,e posicionei ela diferente da imagem retrato.
+Isso são confg especificas, tenho minhas configurações genericas no all que funcionam, mas tenho configurações especificas para quando a tela muda de posição aqui, e funcionam tambem. */

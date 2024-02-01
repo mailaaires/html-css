@@ -1,3 +1,16 @@
 @charset "UTF-8";
 
 /* aparelhos deitados (landscape) */
+
+/* quando eu faço configurações genericas, no css all, vai valer tanto para o meu paisagem aqui, como para meu retrato ali ao lado.
+Porem tudo que eu configurar a parte aqui dentro do css landscape, vai funcionar so para tela deitada
+e pro portrait, so para telas em pé
+como por exemplo, eu usar uma imagem pra preencher a tela deitada,e  outra pra preencher a tela em pé
+o dispositivo entende essas configurações e respeita.
+ */
+
+ body {
+    background-image: url(../imagens/cev-landscape.jpg);
+    background-position: left bottom;
+ }
+ /* Como por exemplo aqui, eu defini uma imagem diferente, e posicionei ela no canto e em baixo. */
