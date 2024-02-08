@@ -4,14 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Media Query</title>
-    
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link rel="stylesheet" href="estilos/style.css">
 </head>
 <body>
    
-
+<!--NESSE EX, VIMOS COMO ADICIONAR UM ICON POR LINK, O PRIMEIRO LINK ALI CIMA, ABAIXO DO TITLE, FOI TIRADO DO SITE QUE O GOOGLE FORNECE DE LINK DE ICONE, E O SEGUNDO JÁ ADICIONADO ABAIXO AQUI NO MEU HEADER, COM O SPAN, E COM O NOME DO ICONE. PELO LINK ESPECIFICADO ALI ACIMA, DE ONDE ESTÁ HOSPEDADO UMA FAMILIA X DE ICONES, EU PUXO AS OPÇÕES DISPONIVEIS, E NOMEANDO EX "MENU", igual está lá no site do google e de acordo com o link ali de cima que especifica onde que tá esse icone, eu consigo utilizar esse icone sem precisar da imagem, so pelo link.
+ELE JÁ TEM O PROPRIO CLASS DE IDENTIFICAÇÃO DO CODIGO DE ORIGEM DO GOOGLE, EU COLOQUEI UM ID PARA CONSEGUIR CONFIGUERAR ELE AQUI DENTRO DO MEU SITE-->
+<!--Ate onde eu so coloquei o icone deu bom, agora pra o menu ficar dentro do icone nas minhas telas menores, ou seja na cnfg mobile first, preciso de JS, coloquei o onclick, e dentro dos ( ) eu puxo js que vai ficar la no final do body, dei ID ao menu.-->
     <header>
-        <h1> Meu site com menu responsivo, media query.</h1>
-        <menu>
+        <h1> Menu</h1>
+        <span id="burguer" class="material-symbols-outlined" onclick="clickMenu()">menu</span>
+        <menu id="itens">
             <ul>
                 <li><a href="#">OPÇÃO 1</a></li>
                 <li><a href="#">OPÇÃO 2</a></li>
@@ -35,9 +39,27 @@
             <p>
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam non illum tempore accusamus libero expedita labore, nostrum modi accusantium, ipsa nam nisi similique nobis repellendus neque, cupiditate aut praesentium eos.
             </p>
+            <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam non illum tempore accusamus libero expedita labore, nostrum modi accusantium, ipsa nam nisi similique nobis repellendus neque, cupiditate aut praesentium eos.
+            </p>
+          
+            <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam non illum tempore accusamus libero expedita labore, nostrum modi accusantium, ipsa nam nisi similique nobis repellendus neque, cupiditate aut praesentium eos.
+            </p>
+          
+           
+            
 
         </article>
     </main>
-    
+    <script>
+        function clickMenu() {
+          if (itens.style.display == 'block') {
+            itens.style.display = 'none'
+          } else {
+            itens.style.display = 'block'
+          }
+        }
+    </script>
 </body>
 </html>
