@@ -1,0 +1,26 @@
+@charset "UTF-8";
+
+
+/*DEMAIS TELAS*/
+
+@media screen and (min-width: 786px) {
+    span#burguer {
+        display: none;
+    }
+
+    menu {
+        display: block;
+        
+    }
+
+    menu > ul > li {
+        display: inline-block;
+    }
+    main {
+        width: 768px;
+    }
+}
+
+/*nessa confg acima, eu consigo fazer meu menu aparecer sem o burguer em telas maiores, porem tem uma falha no codigo que se eu deixar abrir o menu e fechar na tela pequena, ele some quando eu aumento ela, pra solucionar isso eu resolvo com JS feito la no meu index.
+
+outro detalhe, esse codigo acima de media, serve para configurar de modo geral meus media screen, de telas maiores, caso acima de telas de 786 pra cima.*/

@@ -6,8 +6,10 @@
     <title>Media Query</title>
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
     <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/media-query.css">
+    <!--esse terceiro link é para outras telas-->
 </head>
-<body>
+<body onresize="mudouTamanho()">
    
 <!--NESSE EX, VIMOS COMO ADICIONAR UM ICON POR LINK, O PRIMEIRO LINK ALI CIMA, ABAIXO DO TITLE, FOI TIRADO DO SITE QUE O GOOGLE FORNECE DE LINK DE ICONE, E O SEGUNDO JÁ ADICIONADO ABAIXO AQUI NO MEU HEADER, COM O SPAN, E COM O NOME DO ICONE. PELO LINK ESPECIFICADO ALI ACIMA, DE ONDE ESTÁ HOSPEDADO UMA FAMILIA X DE ICONES, EU PUXO AS OPÇÕES DISPONIVEIS, E NOMEANDO EX "MENU", igual está lá no site do google e de acordo com o link ali de cima que especifica onde que tá esse icone, eu consigo utilizar esse icone sem precisar da imagem, so pelo link.
 ELE JÁ TEM O PROPRIO CLASS DE IDENTIFICAÇÃO DO CODIGO DE ORIGEM DO GOOGLE, EU COLOQUEI UM ID PARA CONSEGUIR CONFIGUERAR ELE AQUI DENTRO DO MEU SITE-->
@@ -60,6 +62,16 @@ ELE JÁ TEM O PROPRIO CLASS DE IDENTIFICAÇÃO DO CODIGO DE ORIGEM DO GOOGLE, EU
             itens.style.display = 'block'
           }
         }
+
+
+        function mudouTamanho() {
+        if (window.innerWidth >= 768) {
+            itens.style.display = 'block'
+        } else {
+            itens.style.display = 'none'
+        }
+        }
+        /*esse codigo mudou tamanho correspode a correção do bug do telas maiores em JS*/
     </script>
 </body>
 </html>
